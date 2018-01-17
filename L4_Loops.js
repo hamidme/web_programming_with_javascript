@@ -59,10 +59,18 @@ while (num >=1) {
 // your code goes here
 countdown = 60;
 while(countdown >= 0){
-    if(countdown!=50 && countdown!==0){
+    if(countdown!=50 && countdown!==31 && countdown!==16 && countdown!==10 && countdown!==6 && countdown!==0){
         console.log("T"+ String(-countdown) + " seconds");
     } else if(countdown === 50){
         console.log("Orbiter transfers from ground to internal power");
+    } else if(countdown === 31){
+        console.log("Ground launch sequencer is go for auto sequence start");
+    } else if(countdown === 16){
+        console.log("Activate launch pad sound suppression system");
+    } else if(countdown === 10){
+        console.log("Activate main engine hydrogen burnoff system");
+    } else if(countdown === 6){
+        console.log("Main engine start");
     } else if(countdown === 0){
         console.log("Solid rocket booster ignition and liftoff!");
     }
