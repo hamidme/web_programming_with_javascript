@@ -49,3 +49,23 @@ while (num >=1) {
     // decrement num
     num-=1;
 }
+///////////////////////////////////////////////////////////////////////////////
+/*
+ * Programming Quiz: Countdown, Liftoff! (4-3)
+ * 
+ * Using a while loop, print out the countdown output above.
+ */
+
+// your code goes here
+countdown = 60;
+while(countdown >= 0){
+    if(countdown!=50 && countdown!==0){
+        console.log("T"+ String(-countdown) + " seconds");
+    } else if(countdown === 50){
+        console.log("Orbiter transfers from ground to internal power");
+    } else if(countdown === 0){
+        console.log("Solid rocket booster ignition and liftoff!");
+    }
+    
+    countdown-=1;
+}
