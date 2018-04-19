@@ -1,0 +1,9 @@
+//reverse a string
+function reverseString(str) {
+  var splitReverseStr = str.split('').reverse();
+  var joinStr = splitReverseStr.join('');
+  return joinStr;
+  
+}
+
+reverseString("hello");
